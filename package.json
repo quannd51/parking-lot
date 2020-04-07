@@ -1,0 +1,21 @@
+{
+  "name": "parkinglot",
+  "version": "1.0.0",
+  "description": "test project indigo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "create_parking_lot": "node -e \"require('./src/scripts/createParkingLot').createParkingLot('${npm_config_capacity}')\"",
+    "status": "node -e \"require('./src/scripts/status').status()\"",
+    "park": "node -e \"require('./src/scripts/parkACar').parkACar('${npm_config_carNumber}')\"",
+    "leave": "node -e \"require('./src/scripts/leaveCar').leave('${npm_config_carNumber}, ${npm_config_hTime}')\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
+}
